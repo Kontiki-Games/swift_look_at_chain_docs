@@ -27,7 +27,7 @@ For specific bones where the default parameters are insufficient, Override Setti
 * Utilizing curve-driven weight adjustments, cone angle tuning, and axis hints, the plugin achieves smooth, natural look-at behaviors.
 All scenes were recorded in real-time within a playable environment, with no post-editing, offering a transparent view of the plugin's performance in practical use cases.
 * [Executable](https://1drv.ms/u/c/dc82dcbba351ac73/EVV9SC3G-E1ErM9-rtJr-Y0BbX6g-1fjV892cGqA6ltBJQ?e=8verZA)
-* [Examples Project]()
+* [Examples Project](https://github.com/Kontiki-Games/SwiftLookAtChainExamples)
 
 ---
 
