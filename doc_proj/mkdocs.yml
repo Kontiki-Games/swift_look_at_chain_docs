@@ -1,0 +1,7 @@
+site_name: Swift Look At Chain Docs
+site_url: https://kontiki-games.github.io/swift_look_at_chain_doc/
+use_directory_urls: false
+nav:
+    - Home: index.md
+
+theme: readthedocs

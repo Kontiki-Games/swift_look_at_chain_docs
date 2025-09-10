@@ -1,0 +1,38 @@
+name: Deploy MkDocs site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 或者你使用的其他默认分支名，如 master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Debug current dir
+        run: |
+          echo "PWD=$(pwd)"
+          echo "Files:"
+          ls -la
+
+      - name: Install dependencies
+        run: |
+          cd doc_proj
+          pip install -r requirements.txt
+
+      - name: Deploy to GitHub Pages
+        run: |
+          cd doc_proj
+          mkdocs gh-deploy --force
