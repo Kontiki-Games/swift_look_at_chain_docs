@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://kontiki-games.github.io/swift_look_at_chain_doc/index.html" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Swift Look At Chain Docs</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/swift_look_at_chain_doc/index.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> Swift Look At Chain Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#features">Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples-project">Examples Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-start-video">Quick Start Video</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#node-setup">Node Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#area-1chain-definition">Area 1｜Chain Definition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#area-2default-bone-settings">Area 2｜Default Bone Settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#area-3curves-distribution">Area 3｜Curves / Distribution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#area-4override-settings-optional">Area 4｜Override Settings (Optional)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#area-5ignored-bones-optional">Area 5｜Ignored Bones (Optional)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#area-6debug-draw-settings">Area 6｜Debug Draw Settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#runtime-node-properties">Runtime Node Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#per-bone-settings-flookatchainlinksettings">Per-Bone Settings (FLookAtChainLinkSettings)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#debug-properties">Debug Properties</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Swift Look At Chain Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="welcome-to-swift-look-at-chain-manual">Welcome to Swift Look At Chain Manual</h1>
+<h2 id="overview">Overview</h2>
+<p><em><a href="https://www.fab.com/listings/6012733a-ee51-422e-9896-f3f1ae4f035d">Swift Look At Chain</a></em> is an extended version built on top of <em><a href="https://www.fab.com/listings/1b2a9e95-82b4-4313-88e1-cfbd61a99ea7">Swift Look At</a></em>.
+It introduces the ability to drive an entire bone chain with a single node, making editing more intuitive, convenient, and efficient.</p>
+<hr />
+<h2 id="features">Features</h2>
+<ul>
+<li>
+<p><strong>Full Feature Inheritance</strong> — Retains nearly all features from <a href="https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6">Swift Look At</a> for compatibility and a familiar workflow.<br />
+  → <a href="https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6">View Swift Look At on Fab</a> · <a href="https://kontiki.info/swift_look_at_doc/">Documentation</a></p>
+</li>
+<li>
+<p><strong>Bone Chain Control</strong> — Drive an entire chain with a single node, reducing setup complexity.</p>
+</li>
+<li>
+<p><strong>Weight Curve Distribution</strong> — Smoothly control how much each bone contributes to the Look At effect, enabling natural falloff (e.g., strong on the head, subtle on the spine).</p>
+</li>
+<li>
+<p><strong>Clamp Curve Distribution</strong> — Define per-bone rotation limits to ensure stable and believable motion.</p>
+</li>
+<li>
+<p><strong>Per-Bone Override Settings</strong> — Customize specific bones when defaults aren’t enough, for maximum flexibility.</p>
+</li>
+</ul>
+<hr />
+<h2 id="examples-project">Examples Project</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VQa51ICYKs4" frameborder="0" allowfullscreen></iframe>
+<ul>
+<li>This demo video showcases the Swift Look At Chain plugin applied across various skeletal structures, including humanoid and dinosaur characters—covering head, spine, tail, and eye controls.</li>
+<li>Utilizing curve-driven weight adjustments, cone angle tuning, and axis hints, the plugin achieves smooth, natural look-at behaviors.
+All scenes were recorded in real-time within a playable environment, with no post-editing, offering a transparent view of the plugin's performance in practical use cases.</li>
+<li><a href="https://1drv.ms/u/c/dc82dcbba351ac73/EVV9SC3G-E1ErM9-rtJr-Y0BbX6g-1fjV892cGqA6ltBJQ?e=8verZA">Executable</a></li>
+<li><a href="https://github.com/Kontiki-Games/SwiftLookAtChainExamples">Examples Project</a></li>
+</ul>
+<hr />
+<h2 id="quick-start-video">Quick Start Video</h2>
+<ul>
+<li>Humanoid Setup</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VANI3xCpVXE" frameborder="0" allowfullscreen></iframe>
+
+<ul>
+<li>Dino Setup</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NTAL2qabE2Y" frameborder="0" allowfullscreen></iframe>
+
+<hr />
+<h2 id="node-setup">Node Setup</h2>
+<p>This section uses the humanoid character from the <em>Example Project</em> to demonstrate the <strong>Swift Look At Chain</strong> node.<br />
+We start with an <strong>AnimGraph overview</strong>, then focus on the <strong>Spine → Head</strong> chain UI and walk through areas <strong>1–6</strong>.<br />
+Insert the corresponding close-up screenshots for each area.</p>
+<p><img alt="Figure 1: AnimGraph overview (Spine→Head and Right Arm chains)" src="img/animgraph_overview.png" /></p>
+<p><img alt="Figure 2: Spine→Head node UI overview (Areas 1–7)" src="img/chain_node_overview.png" /></p>
+<hr />
+<h3 id="area-1chain-definition">Area 1｜Chain Definition</h3>
+<p><strong>Purpose:</strong> Define the bone range driven by the chain.<br />
+<strong>Keys:</strong>
+- <strong>Start Bone</strong> (e.g., <code>spine_01</code>)
+- <strong>End Bone</strong> (e.g., <code>head</code>)</p>
+<p>The system collects all continuous bones between Start and End to form the chain.</p>
+<p><img alt="Figure 3: Area 1 — Chain definition (Start / End)" src="img/area1_chain_definition.png" /></p>
+<hr />
+<h3 id="area-2default-bone-settings">Area 2｜Default Bone Settings</h3>
+<p><strong>Purpose:</strong> Provide a <strong>single default behavior</strong> for <strong>all bones</strong> in the chain. Any bone not explicitly overridden (Area 4) will use these defaults.</p>
+<p><strong>Common fields (examples):</strong>
+- <strong>Local Look At Axis</strong><br />
+- <strong>Use Look Up Axis / Up Axis Locked / Local Look Up Axis</strong><br />
+- <strong>Look At Clamp / Clamp Ratio / Approximate Clamp / Cone Orientation Socket</strong><br />
+- <strong>Damping Time</strong> (seconds)</p>
+<p><img alt="Figure 4: Area 2 — Default settings" src="img/area2_default_settings.png" /></p>
+<blockquote>
+<p>Tip: Start with defaults. Only add overrides when a bone truly needs a different behavior.</p>
+</blockquote>
+<hr />
+<h3 id="area-3curves-distribution">Area 3｜Curves / Distribution</h3>
+<p><strong>Purpose:</strong> Distribute <strong>influence</strong> and <strong>clamp intensity</strong> along the chain using two curves:
+- <strong>Weight Curve</strong> — how much each bone contributes (0–1)<br />
+- <strong>Clamp Curve</strong> — how strong the angle limit is for each bone (0–1)</p>
+<p><strong>Sampling &amp; normalization (important):</strong>
+- Curves are <strong>uniformly sampled by bone index</strong> (from chain start to end).<br />
+- After sampling, the <strong>maximum value is normalized to 1.0</strong>, and all other samples are scaled relative to it (including the max itself).<br />
+- <strong>Focus on the shape/trend</strong> of the curve rather than absolute numbers.</p>
+<p><img alt="Figure 5: Area 3 — Curves (Weight / Clamp)" src="img/area3_curves.png" /></p>
+<hr />
+<h3 id="area-4override-settings-optional">Area 4｜Override Settings (Optional)</h3>
+<p><strong>Purpose:</strong> Provide <strong>per-bone customization</strong> when a specific bone requires behavior different from the defaults (e.g., axes, clamp, damping).</p>
+<p><strong>Recommendations:</strong>
+- If defaults work, <strong>don’t add overrides</strong>.<br />
+- Only create entries for bones that truly need different behavior.<br />
+- If multiple bones share the same policy, duplicate the entry and change the bone name.</p>
+<p><img alt="Figure 6: Area 4 — Overrides (example with spine_01 / spine_02 / spine_03)" src="img/area4_overrides.png" /></p>
+<hr />
+<h3 id="area-5ignored-bones-optional">Area 5｜Ignored Bones (Optional)</h3>
+<p><strong>Purpose:</strong> Exclude bones that should <strong>not</strong> be processed by this chain (e.g., helper or special-purpose bones).</p>
+<p><strong>Typical use cases:</strong>
+- Avoid conflicts when sharing control with physics or Control Rig<br />
+- Reduce evaluation by excluding visual-only bones</p>
+<p><img alt="Figure 7: Area 5 — Ignored Bones" src="img/area5_ignored.png" /></p>
+<hr />
+<h3 id="area-6debug-draw-settings">Area 6｜Debug Draw Settings</h3>
+<p><strong>Purpose:</strong> Visualize the chain behavior in the viewport for development and teaching.</p>
+<p><strong>Common toggles:</strong>
+- <strong>Show Bone Frame</strong><br />
+- <strong>Show Original / Modified Look At Axis</strong><br />
+- <strong>Show Original / Modified Up Axis</strong><br />
+- <strong>Show Clamp Cone</strong><br />
+- <strong>Show Desired Target</strong></p>
+<p><img alt="Figure 8: Area 6 — Debug draw" src="img/area6_debug.png" /></p>
+<blockquote>
+<p>Suggested for early tuning: enable <strong>Clamp Cone</strong>, and <strong>Modified Axes</strong>.</p>
+</blockquote>
+<hr />
+<h3 id="summary">Summary</h3>
+<ul>
+<li><strong>Minimal setup:</strong> Areas <strong>1 (Chain)</strong> + <strong>2 (Defaults)</strong> + <strong>3 (Curves)</strong> are usually sufficient for a natural result.  </li>
+<li><strong>Advanced control:</strong> Use <strong>Area 4 (Overrides)</strong> only when specific bones require unique behavior.  </li>
+<li><strong>Debug efficiency:</strong> Area <strong>6 (Debug)</strong> greatly improves iteration speed during development.</li>
+</ul>
+<hr />
+<h2 id="properties">Properties</h2>
+<h3 id="runtime-node-properties">Runtime Node Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start Bone</strong></td>
+<td>Name of the first bone in the chain. Defines where the chain begins.</td>
+</tr>
+<tr>
+<td><strong>End Bone</strong></td>
+<td>Name of the last bone in the chain. Defines where the chain ends.</td>
+</tr>
+<tr>
+<td><strong>Default Settings</strong></td>
+<td>Default parameters applied to all bones in the chain, unless explicitly overridden. Includes axis definitions, clamp, up axis settings, and damping.</td>
+</tr>
+<tr>
+<td><strong>Weight Curve</strong></td>
+<td>Curve controlling the influence weight of each bone in the chain. Sampled at equal intervals, normalized by the maximum value, and applied per bone.</td>
+</tr>
+<tr>
+<td><strong>Clamp Curve</strong></td>
+<td>Curve controlling the clamp angle of each bone in the chain. Sampled at equal intervals, normalized by the maximum value, and used to scale clamp angles.</td>
+</tr>
+<tr>
+<td><strong>Look At Target</strong></td>
+<td>Target socket or bone to look at. Used if no explicit bone reference is provided. Supports offset via <strong>Look At Location</strong>.</td>
+</tr>
+<tr>
+<td><strong>Look At Location</strong></td>
+<td>Target offset. If LookAtBone is empty, it is in world space; otherwise, it is relative to LookAtBone or LookAtSocket local space.</td>
+</tr>
+<tr>
+<td><strong>Override Settings</strong></td>
+<td>Per-bone override configuration. Bones listed here will use custom settings instead of the default chain configuration.</td>
+</tr>
+<tr>
+<td><strong>Ignored Bones</strong></td>
+<td>Bones excluded from the look-at rotation. Useful for skipping specific joints.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="per-bone-settings-flookatchainlinksettings">Per-Bone Settings (FLookAtChainLinkSettings)</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Local Look At Axis</strong></td>
+<td>Axis in local space that should point toward the target.</td>
+</tr>
+<tr>
+<td><strong>Use Look Up Axis</strong></td>
+<td>Whether to use an additional Up axis for stabilizing rotation.</td>
+</tr>
+<tr>
+<td><strong>Up Axis Locked</strong></td>
+<td>If enabled, locks the Up axis when <code>Use Look Up Axis</code> is active.</td>
+</tr>
+<tr>
+<td><strong>Local Look Up Axis</strong></td>
+<td>Defines the local Up axis direction when <code>Use Look Up Axis</code> is enabled.</td>
+</tr>
+<tr>
+<td><strong>Look At Clamp</strong></td>
+<td>Maximum look-at rotation in degrees. Rotation will be clamped within a cone.</td>
+</tr>
+<tr>
+<td><strong>Clamp Ratio</strong></td>
+<td>Ratio between pitch and yaw constraints when clamping.</td>
+</tr>
+<tr>
+<td><strong>Cone Orientation Socket</strong></td>
+<td>Optional socket providing a rotation offset for the clamp cone’s central axis.</td>
+</tr>
+<tr>
+<td><strong>Approximate Clamp</strong></td>
+<td>Optimization: available when Up Axis is enabled but not locked. Trades precision for better performance.</td>
+</tr>
+<tr>
+<td><strong>Damping Time</strong></td>
+<td>Damping time (seconds) for smoothing bone rotation. Smaller values = faster/snappier response; larger values = smoother/slower response.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="debug-properties">Debug Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Default Debug Draw Settings</strong></td>
+<td>Global default visualization settings applied to the entire chain.</td>
+</tr>
+<tr>
+<td><strong>Override Debug Draw Settings</strong></td>
+<td>Per-bone override visualization settings. Specific bones can have custom debug draw toggles, independent of the default.</td>
+</tr>
+<tr>
+<td><strong>Show Bone Frame</strong></td>
+<td>Display the local coordinate system axes of each bone.</td>
+</tr>
+<tr>
+<td><strong>Show Original Look At Axis</strong></td>
+<td>Display the bone’s original Look At axis before modification.</td>
+</tr>
+<tr>
+<td><strong>Show Original Up Axis</strong></td>
+<td>Display the bone’s original Up axis before modification.</td>
+</tr>
+<tr>
+<td><strong>Show Modified Look At Axis</strong></td>
+<td>Display the bone’s Look At axis after modification.</td>
+</tr>
+<tr>
+<td><strong>Show Modified Up Axis</strong></td>
+<td>Display the bone’s Up axis after modification.</td>
+</tr>
+<tr>
+<td><strong>Show Clamp Cone</strong></td>
+<td>Display the clamp cone used to limit rotation.</td>
+</tr>
+<tr>
+<td><strong>Show Desired Target</strong></td>
+<td>Display the final desired target position.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>You’ve made it all the way down here — if you’re still not sure, just drop us a line at <strong>kontiki-games@hotmail.com</strong> to request an evaluation version.</p>
+</blockquote>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-09-11 15:27:36.236641+00:00
+-->
