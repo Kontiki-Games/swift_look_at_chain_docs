@@ -2,7 +2,7 @@
 
 ## Overview
 
-*[Swift Look At Chain](https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6)* is an extended version built on top of *[Swift Look At](https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6)*.
+*[Swift Look At Chain](https://www.fab.com/listings/6012733a-ee51-422e-9896-f3f1ae4f035d)* is an extended version built on top of *[Swift Look At](https://www.fab.com/listings/1b2a9e95-82b4-4313-88e1-cfbd61a99ea7)*.
 It introduces the ability to drive an entire bone chain with a single node, making editing more intuitive, convenient, and efficient.
 
 ---
