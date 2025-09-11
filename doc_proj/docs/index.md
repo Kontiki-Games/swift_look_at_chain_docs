@@ -9,14 +9,16 @@ It introduces the ability to drive an entire bone chain with a single node, maki
 
 ## Features
 
-* **Bone Chain Control**
-Drive an entire bone chain with a single node.
-* **Weight Curve Distribution**
-The Weight Curve allows you to precisely control how much each bone in the chain contributes to the Look At effect.
-* **Clamp Curve Distribution**
-The Clamp Curve defines per-bone rotation limits along the chain.
-* **Per-Bone Override Settings**
-For specific bones where the default parameters are insufficient, Override Settings provide per-bone customization.
+- **Full Feature Inheritance** — Retains nearly all features from [Swift Look At](https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6) for compatibility and a familiar workflow.  
+  → [View Swift Look At on Fab](https://www.unrealengine.com/marketplace/slug/c3c3d72ef6de497ba9e166cf8c6974c6) · [Documentation](https://kontiki.info/swift_look_at_doc/)
+
+- **Bone Chain Control** — Drive an entire chain with a single node, reducing setup complexity.
+
+- **Weight Curve Distribution** — Smoothly control how much each bone contributes to the Look At effect, enabling natural falloff (e.g., strong on the head, subtle on the spine).
+
+- **Clamp Curve Distribution** — Define per-bone rotation limits to ensure stable and believable motion.
+
+- **Per-Bone Override Settings** — Customize specific bones when defaults aren’t enough, for maximum flexibility.
 
 ---
 
@@ -33,8 +35,10 @@ All scenes were recorded in real-time within a playable environment, with no pos
 
 ## Quick Start Video
 
+* Humanoid Setup
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VANI3xCpVXE" frameborder="0" allowfullscreen></iframe>
 
+* Dino Setup
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NTAL2qabE2Y" frameborder="0" allowfullscreen></iframe>
 
 ---
@@ -180,3 +184,6 @@ The system collects all continuous bones between Start and End to form the chain
 | **Show Clamp Cone** | Display the clamp cone used to limit rotation. |
 | **Show Desired Target** | Display the final desired target position. |
 
+---
+
+> You’ve made it all the way down here — if you’re still not sure, just drop us a line at **kontiki-games@hotmail.com** to request an evaluation version.
